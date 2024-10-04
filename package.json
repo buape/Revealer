@@ -1,0 +1,20 @@
+{
+    "name": "forward-revealer",
+    "private": true,
+    "main": "src/index.ts",
+    "scripts": {
+        "build": "wrangler deploy --dry-run",
+        "deploy": "wrangler deploy",
+        "dev": "wrangler deploy && wrangler tail"
+    },
+    "dependencies": {
+        "@buape/carbon": "0.5.0"
+    },
+    "devDependencies": {
+        "@cloudflare/workers-types": "4.20240925.0",
+        "wrangler": "3.80.0"
+    },
+    "carbonMetadata": {
+        "initVersion": "0.1.1"
+    }
+}
